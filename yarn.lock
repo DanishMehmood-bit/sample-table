@@ -1192,7 +1192,7 @@
   resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/icons-generic-webfont/-/icons-generic-webfont-1.0.34.tgz#837b59718321335d78196260442b218b624effce"
   integrity sha1-g3tZcYMhM114GWJgRCshi2JO/84=
 
-"@bentley/icons-generic@^1.0.13", "@bentley/icons-generic@^1.0.15":
+"@bentley/icons-generic@^1.0.13":
   version "1.0.34"
   resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/icons-generic/-/icons-generic-1.0.34.tgz#0f988de1fc89c5296572d2f4cd1ae40ee918c9f4"
   integrity sha1-D5iN4fyJxSllctL0zRrkDukYyfQ=
@@ -1307,17 +1307,6 @@
   resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/presentation-common/-/presentation-common-2.19.13.tgz#c50fa8604922445a67889defdb5356f0be86e4a1"
   integrity sha1-xQ+oYEkiRFpniJ3v21NW8L6G5KE=
 
-"@bentley/presentation-components@2.19.13":
-  version "2.19.13"
-  resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/presentation-components/-/presentation-components-2.19.13.tgz#4ea650bed22fad02bd56b8d4ee8a6c72154e0b87"
-  integrity sha1-TqZQvtIvrQK9VrjU7opschVOC4c=
-  dependencies:
-    fast-deep-equal "^3.1.3"
-    fast-sort "^3.0.2"
-    immer "^9.0.1"
-    micro-memoize "^4.0.9"
-    rxjs "^6.6.2"
-
 "@bentley/presentation-frontend@^2.6.4":
   version "2.19.13"
   resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/presentation-frontend/-/presentation-frontend-2.19.13.tgz#76dcf80bdb8948ddf228838dc3f328f4de8fb7dc"
@@ -1428,7 +1417,7 @@
   dependencies:
     "@bentley/bentleyjs-core" "2.19.13"
 
-"@bentley/telemetry-client@2.19.13", "@bentley/telemetry-client@^2.6.4":
+"@bentley/telemetry-client@2.19.13":
   version "2.19.13"
   resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/telemetry-client/-/telemetry-client-2.19.13.tgz#030ac13bb6ed46544915c1461f97977561e38256"
   integrity sha1-AwrBO7btRlRJFcFGH5eXdWHjglY=
@@ -1494,34 +1483,6 @@
     react-select "3.1.0"
     resize-observer-polyfill "1.5.1"
     svg-sprite-loader "4.2.1"
-
-"@bentley/ui-framework@^2.6.4":
-  version "2.19.13"
-  resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/ui-framework/-/ui-framework-2.19.13.tgz#79a29a75d7b17c1b9793ec3ab798fe01fb4f529b"
-  integrity sha1-eaKaddexfBuXk+w6t5j+AftPUps=
-  dependencies:
-    "@bentley/context-registry-client" "2.19.13"
-    "@bentley/icons-generic" "^1.0.15"
-    "@bentley/icons-generic-webfont" "^1.0.15"
-    "@bentley/presentation-components" "2.19.13"
-    classnames "^2.3.1"
-    immer "^9.0.1"
-    lodash "^4.17.10"
-    react-dnd "^11.1.3"
-    react-dnd-html5-backend "^11.1.3"
-    react-split-pane "0.1.92"
-    rxjs "^6.6.2"
-    svg-sprite-loader "4.2.1"
-
-"@bentley/ui-ninezone@^2.6.4":
-  version "2.19.13"
-  resolved "https://pkgs.dev.azure.com/bentleycs/_packaging/Packages/npm/registry/@bentley/ui-ninezone/-/ui-ninezone-2.19.13.tgz#cc43c1e43ab93850332c98f7c9237321e3622586"
-  integrity sha1-zEPB5Dq5OFAzLJj3ySNzIeNiJYY=
-  dependencies:
-    classnames "^2.3.1"
-    immer "^9.0.1"
-    svg-sprite-loader "4.2.1"
-    uuid "^7.0.3"
 
 "@bentley/usage-logging-client@2.19.13":
   version "2.19.13"
@@ -5911,7 +5872,7 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
-fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
+fast-deep-equal@^3.1.1:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
@@ -5964,11 +5925,6 @@ fast-sass-loader@^2.0.0:
     co "^4.6.0"
     fs-extra "3.x"
     loader-utils "^1.1.0"
-
-fast-sort@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/fast-sort/-/fast-sort-3.0.2.tgz#98e5d77f85b48932bc4c395e3025b7a26051b6c2"
-  integrity sha512-DIKDkHBt+IubEEU44/kEulX3SbIuufEHIhRfw0MCh7f/HLGWmR/Dk7xg2tapT28pVFqnEV1ZDtl6SeViAyVe4Q==
 
 fastq@^1.6.0:
   version "1.10.1"
@@ -8495,11 +8451,6 @@ methods@^1.1.2, methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-micro-memoize@^4.0.9:
-  version "4.0.9"
-  resolved "https://registry.yarnpkg.com/micro-memoize/-/micro-memoize-4.0.9.tgz#b44a38c9dffbee1cefc2fd139bc8947952268b62"
-  integrity sha512-Z2uZi/IUMGQDCXASdujXRqrXXEwSY0XffUrAOllhqzQI3wpUyZbiZTiE2JuYC0HSG2G7DbCS5jZmsEKEGZuemg==
-
 microevent.ts@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/microevent.ts/-/microevent.ts-0.1.1.tgz#70b09b83f43df5172d0205a63025bce0f7357fa0"
@@ -10347,7 +10298,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10704,15 +10655,6 @@ react-select@3.1.0:
     react-input-autosize "^2.2.2"
     react-transition-group "^4.3.0"
 
-react-split-pane@0.1.92:
-  version "0.1.92"
-  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.92.tgz#68242f72138aed95dd5910eeb9d99822c4fc3a41"
-  integrity sha512-GfXP1xSzLMcLJI5BM36Vh7GgZBpy+U/X0no+VM3fxayv+p1Jly5HpMofZJraeaMl73b3hvlr+N9zJKvLB/uz9w==
-  dependencies:
-    prop-types "^15.7.2"
-    react-lifecycles-compat "^3.0.4"
-    react-style-proptype "^3.2.2"
-
 react-spring@^8.0.27:
   version "8.0.27"
   resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-8.0.27.tgz#97d4dee677f41e0b2adcb696f3839680a3aa356a"
@@ -10720,13 +10662,6 @@ react-spring@^8.0.27:
   dependencies:
     "@babel/runtime" "^7.3.1"
     prop-types "^15.5.8"
-
-react-style-proptype@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/react-style-proptype/-/react-style-proptype-3.2.2.tgz#d8e998e62ce79ec35b087252b90f19f1c33968a0"
-  integrity sha512-ywYLSjNkxKHiZOqNlso9PZByNEY+FTyh3C+7uuziK0xFXu9xzdyfHwg4S9iyiRRoPCR4k2LqaBBsWVmSBwCWYQ==
-  dependencies:
-    prop-types "^15.5.4"
 
 react-themeable@^1.1.0:
   version "1.1.0"
@@ -12836,11 +12771,6 @@ uuid@^3.1.0, uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
-
-uuid@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
-  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
 
 uuid@^8.3.0:
   version "8.3.2"
